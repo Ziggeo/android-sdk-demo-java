@@ -1,9 +1,9 @@
 package com.ziggeo.androidsdk.demo.java;
 
+import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 
 import com.ziggeo.androidsdk.IZiggeo;
 import com.ziggeo.androidsdk.Ziggeo;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final String appToken = "d541dc6b1351d6424b04fb8415658e0d";
+        final String appToken = ""; //your app token here
         IZiggeo ziggeo = new Ziggeo(appToken, this);
         initRecorderCallback(ziggeo);
         initPlayerCallback(ziggeo);
